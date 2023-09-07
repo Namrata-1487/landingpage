@@ -5,25 +5,43 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 	<title>HTML5 Massively Landing Page</title>
+
+
 </head>
 
-<body background="bg.jpg">
+<body>
+	<!-- header -->
 	<header>
-		<h2 class="heading">This is</h2>
-		<h2 class="heading">massively</h2>
+		<div class="menubar-close">
+			<button type="button" id="show">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+		<div class="background">
+			<img src="/assets/images/bg.jpg" alt="">
+		</div>
+		<div class="headercontent">
+			<p class="heading">This is</p>
+			<p class="heading">massively</p>
 
-		<p class="content">A free, fully responsive HTML5 + CSS3 site templaye designerd by @ajikn for HTML5 UP and
-			released for free
-			under the <u>Creative Common license</u></p>
+			<p class="content">A free, fully responsive HTML5 + CSS3 site templaye designerd by @ajikn for HTML5 UP and
+				released for free under the <u>Creative Common license</u></p>
 
-		<a href="#first"><i class="fa fa-4x fa-arrow-circle-down"></i></a>
+			<a href="#first"><i class="fa fa-4x fa-arrow-circle-down"></i></a>
+		</div>
+
 	</header>
-	<nav>
-		<ul>
+	<!-- <main> -->
+	<nav class="nav-list">
+		<button type="button" id="hide">
+			<i class="fa-solid fa-xmark"></i>
+		</button>
+		<ul class="responsivelist">
 			<li class="navbar"><a href="#">this is massively</a></li>
 			<li class="navbar"><a href="#">generic page</a></li>
 			<li class="navbar"><a href="#">elements reference</a></li>
@@ -41,43 +59,43 @@
 						<i class="fa-brands fa-github"></a></i>
 				</li>
 			</span>
-
-
 		</ul>
 	</nav>
+
+	<!-- </main> -->
 	<!-- content -->
 	<div class="mainsection" id="first">
-		<p class="date">June 8, 2023</p>
+		<p class="date"><span class="dash"></span>June 8, 2023 <span class="dash"></span></p>
 		<h2>and this is a massive healine </h2>
 		<p>
 			Aenean oanare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
 			congue. Loream ipsum dolor amet nullam sed etiam veroeros.
 		</p>
-		<img src="main-section.jpg" alt="main section image">
+		<img src="/assets/images/main-section.jpg" alt="main section image">
 
 		<!-- button full story -->
 		<div id="full-story">
 			<button type="button"><a href="#"> FULL STORY</a></button>
 		</div>
-
 	</div>
 
 	<div class="mainsection2">
 		<div id="image1">
-			<p class="date">April 24, 2017</p>
+			<p class="date"><span class="dash"></span>April 24, 2017<span class="dash"></span></p>
 			<h2>sed magna ipsum faucubus</h2>
-			<img src="1.jpg" alt="image1">
+			<img src="/assets/images/1.jpg" alt="image1">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
-				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae voluptatum
+				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
+				voluptatum
 				sapiente tempora totam et.</p>
 			<div id="full-story">
 				<button type="button"><a href="#"> FULL STORY</a></button>
 			</div>
 		</div>
 		<div id="image2">
-			<p class="date">April 22, 2017</p>
+			<p class="date"><span class="dash"></span>April 22, 2017<span class="dash"></span></p>
 			<h2>promis eget impordiet lorem</h2>
-			<img src="2.jpg" alt="image2">
+			<img src="/assets/images/2.jpg" alt="image2">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 				voluptatum sapiente tempora totam et.</p>
@@ -86,20 +104,21 @@
 			</div>
 		</div>
 		<div id="image1" class="image2">
-			<p class="date">April 24, 2017</p>
+			<p class="date"><span class="dash"></span>April 24, 2017<span class="dash"></span></p>
 			<h2>ante mattis interdum dolor</h2>
-			<img src="3.jpg" alt="image13">
+			<img src="/assets/images/3.jpg" alt="image13">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
-				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae voluptatum
+				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
+				voluptatum
 				sapiente tempora totam et.</p>
 			<div id="full-story">
 				<button type="button"><a href="#"> FULL STORY</a></button>
 			</div>
 		</div>
 		<div id="image2" class="image2">
-			<p class="date">April 22, 2017</p>
+			<p class="date"><span class="dash"></span>April 22, 2017<span class="dash"></span></p>
 			<h2>tempus sed nulla imperdiet</h2>
-			<img src="4.jpg" alt="image2">
+			<img src="/assets/images/4.jpg" alt="image2">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 				voluptatum sapiente tempora totam et.</p>
@@ -108,20 +127,21 @@
 			</div>
 		</div>
 		<div id="image1" class="image2" style="border-bottom:solid 1px rgb(218, 215, 215)">
-			<p class="date">April 24, 2017</p>
+			<p class="date"><span class="dash"></span>April 24, 2017<span class="dash"></span></p>
 			<h2>odio magna sed consectetur</h2>
-			<img src="5.jpg" alt="image13">
+			<img src="/assets/images/5.jpg" alt="image13">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
-				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae voluptatum
+				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
+				voluptatum
 				sapiente tempora totam et.</p>
 			<div id="full-story">
 				<button type="button"><a href="#"> FULL STORY</a></button>
 			</div>
 		</div>
 		<div id="image2" class="image2" style="border-bottom:solid 1px rgb(218, 215, 215)">
-			<p class="date">April 22, 2017</p>
+			<p class="date"><span class="dash"></span>April 22, 2017<span class="dash"></span></p>
 			<h2>augue lorem primis vestibulum</h2>
-			<img src="6.jpg" alt="image2">
+			<img src="/assets/images/6.jpg" alt="image2">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 				doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 				voluptatum sapiente tempora totam et.</p>
@@ -131,19 +151,28 @@
 		</div>
 	</div>
 	<!-- page number -->
-	<div id="pageno">
-		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">......</a></li>
-			<li><a href="#">8</a></li>
-			<li><a href="#">9</a></li>
-			<li><a href="#">10</a></li>
-			<li><a href="#" id="end">NEXT</a></li>
-		</ul>
-	</div>
+	<!-- <div id="pageno"> -->
+	<ul class="pagination">
+		<li>
+			<a href="#" class="prev">PREV</a>
+		</li>
+		<li class="pageNumber active">
+			<a href="#" id="1">1</a>
+		</li>
+		<li class="pageNumber">
+			<a href="#" id="2">2</a>
+		</li>
+		<li class="pageNumber">
+			<a href="#" id="3">3</a>
+		</li>
+		<li class="pageNumber">
+			<a href="#" id="4">4</a>
+		</li>
+		<li>
+			<a href="#" class="next">NEXT</a>
+		</li>
+	</ul>
+	<!-- </div> -->
 
 	<!-- FORM -->
 	<form action="#">
@@ -210,13 +239,41 @@
 			</div>
 		</div>
 	</form>
-
+	<!-- footer -->
 	<footer>
 		<div>
-			<p style="padding:0;"> &copy; untitled &nbsp; &#124; &nbsp; design: <u> html5 up</u> &nbsp; &#124; &nbsp;
+			<p style="padding:0;"> &copy; untitled &nbsp; &#124; &nbsp; design: <u> html5 up</u> &nbsp; &#124;
+				&nbsp;
 				demo imaged: <u> unsplash</u></p>
 		</div>
 	</footer>
+	<!-- </div> -->
+
+	<!-- jquery -->
+	<script>
+		$(document).ready(function () {
+			$("#hide").click(function () {
+				$(".nav-list").hide();
+			});
+			$("#show").click(function () {
+				$(".nav-list").show();
+			});
+			// pagination
+			$('.next').click(function () {
+				$(".pagination").find('.pageNumber.active').next().
+					addClass('active');
+				$('.pagination').find('.pageNumber.active').prev().
+					removeClass('active');
+			});
+			$('.prev').click(function () {
+				$(".pagination").find('.pageNumber.active').prev().
+					addClass('active');
+				$('.pagination').find('.pageNumber.active').next().
+					removeClass('active');
+			});
+
+		})
+	</script>
 </body>
 
 </html>
