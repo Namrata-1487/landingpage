@@ -195,7 +195,7 @@ p {
     display: flex;
     border-top: solid 1px rgb(218, 215, 215);
     padding: 1%;
-    width: 100%;
+
 }
 
 #image1 {
@@ -577,5 +577,6 @@ footer {
 
     footer {
         width: 100%;
+
     }
 }
