@@ -175,7 +175,6 @@ p {
     color: white;
     font-weight: 700;
 }
-
 #first button a {
     text-decoration: none;
     color: #212931;
@@ -194,7 +193,13 @@ p {
 .row-1 {
     display: flex;
     border-top: solid 1px rgb(218, 215, 215);
-    padding: 1%;
+    /* border-bottom: solid 1px rgb(218, 215, 215); */
+    padding: 0 1%;
+
+}
+.mainsection2 .row-1:last-child
+{
+      border-bottom: solid 1px rgb(218, 215, 215);
 }
 
 #image1 {
@@ -405,6 +410,8 @@ footer {
     text-transform: uppercase;
     text-align: center;
 }
+
+
 
 @media screen and (min-width:577px) {
 
