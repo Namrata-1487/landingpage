@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="stylesheet" href="/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
 	<title>HTML5 Massively Landing Page</title>
 
 
@@ -23,7 +22,7 @@
 			</button>
 		</div>
 		<div class="background">
-			<img src="bg.jpg" alt="">
+			<img src="/assets/images/bg.jpg" alt="">
 		</div>
 		<div class="headercontent">
 			<p class="heading">This is</p>
@@ -36,7 +35,7 @@
 		</div>
 
 	</header>
-	
+	<!-- <main> -->
 	<nav class="nav-list">
 		<button type="button" id="hide">
 			<i class="fa-solid fa-xmark"></i>
@@ -62,7 +61,7 @@
 		</ul>
 	</nav>
 
-
+	<!-- </main> -->
 	<!-- content -->
 	<div class="mainsection" id="first">
 		<p class="date"><span class="dash"></span>June 8, 2023 <span class="dash"></span></p>
@@ -71,7 +70,7 @@
 			Aenean oanare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum
 			congue. Loream ipsum dolor amet nullam sed etiam veroeros.
 		</p>
-		<img src="main-section.jpg" alt="main section image">
+		<img src="/assets/images/main-section.jpg" alt="main section image">
 
 		<!-- button full story -->
 		<div id="full-story">
@@ -84,7 +83,7 @@
 			<div id="image1">
 				<p class="date"><span class="dash"></span>April 24, 2017<span class="dash"></span></p>
 				<h2>sed magna ipsum faucubus</h2>
-				<img src="1.jpg" alt="image1">
+				<img src="/assets/images/1.jpg" alt="image1">
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 					doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 					voluptatum
@@ -96,7 +95,7 @@
 			<div id="image2">
 				<p class="date"><span class="dash"></span>April 22, 2017<span class="dash"></span></p>
 				<h2>promis eget impordiet lorem</h2>
-				<img src="2.jpg" alt="image2">
+				<img src="/assets/images/2.jpg" alt="image2">
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 					doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 					voluptatum sapiente tempora totam et.</p>
@@ -109,7 +108,7 @@
 			<div id="image1">
 				<p class="date"><span class="dash"></span>April 24, 2017<span class="dash"></span></p>
 				<h2>ante mattis interdum dolor</h2>
-				<img src="3.jpg" alt="image13">
+				<img src="/assets/images/3.jpg" alt="image13">
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 					doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 					voluptatum
@@ -121,7 +120,7 @@
 			<div id="image2">
 				<p class="date"><span class="dash"></span>April 22, 2017<span class="dash"></span></p>
 				<h2>tempus sed nulla imperdiet</h2>
-				<img src="4.jpg" alt="image2">
+				<img src="/assets/images/4.jpg" alt="image2">
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 					doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 					voluptatum sapiente tempora totam et.</p>
@@ -136,7 +135,7 @@
 					<span class="dash"></span>April 24, 2017<span class="dash"></span>
 				</p>
 				<h2>odio magna sed consectetur</h2>
-				<img src="5.jpg" alt="image13">
+				<img src="/assets/images/5.jpg" alt="image13">
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 					doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 					voluptatum
@@ -148,7 +147,7 @@
 			<div id="image2">
 				<p class="date"><span class="dash"></span>April 22, 2017<span class="dash"></span></p>
 				<h2>augue lorem primis vestibulum</h2>
-				<img src="6.jpg" alt="image2">
+				<img src="/assets/images/6.jpg" alt="image2">
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione aliquid expedita reprehenderit
 					doloremque amet nobis, voluptatibus doloribus aut iure voluptas ea porro quas unde molestiae
 					voluptatum sapiente tempora totam et.</p>
@@ -183,20 +182,20 @@
 	<!-- </div> -->
 
 	<!-- FORM -->
-	<form action="#">
+	<form method="post" onsubmit="sendEmail();reset();return false">
 		<div class="contentin">
 			<div class="formleft">
 				<div class="information">
 					<label>NAME</label>
 					<div class="enter-data">
-						<input type="text" class="form-control" id="name" placeholder="Enter name  ">
+						<input type="text" class="form-control" id="name" placeholder="Enter name  " required>
 					</div>
 				</div>
 				<div class="information">
 					<label class="form-label">EMAIL</label>
 					<div class="enter-data">
-						<input type="email" class="form-control" name="email" id="" aria-describedby="emailHelpId"
-							placeholder="abc@mail.com">
+						<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+							placeholder="abc@mail.com" required>
 					</div>
 				</div>
 
@@ -258,6 +257,32 @@
 	<!-- </div> -->
 
 	<!-- jquery -->
+
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+	<script>
+		function sendEmail() {
+			let name = document.getElementById("name").value;
+			let email = document.getElementById("email").value;
+			let message = document.getElementById("message").value;
+			let body = "name:	" + name + "<br/> email: " + email + "<br/> message: " + message;
+
+
+			Email.send({
+				SecureToken: "0521ed0f-3837-4c08-8b6a-5c88a1a23569 ",
+				Host: "smtp.elasticemail.com",
+				Port: 2525,
+				Username: "namrata.shirsaat@gmail.com",
+				Password: "C783B5004C9D3E3785B3752DA621BBB4185F",
+				To: 'namrata.shirsaat@gmail.com',
+				From: "namrata.shirsaat@gmail.com",
+				Subject: "This is the subject",
+				Body: body,
+			}).then(
+				message => alert("ok")
+			);
+		}
+	</script>
 	<script>
 		$(document).ready(function () {
 			$("#hide").click(function () {
